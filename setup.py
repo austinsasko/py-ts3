@@ -24,10 +24,6 @@
 # std
 from setuptools import setup
 
-# local
-from ts3 import __version__
-
-
 try:
     long_description = open("README.rst").read()
 except OSError:
