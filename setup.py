@@ -40,7 +40,7 @@ except OSError:
 
 setup(
     name = "ts3",
-    version = __version__,
+    version = "2.0.0b3",
     description = "TS3 Server Query API and TS3 Client Query API",
     long_description = long_description,
     author = "The py-ts3 authors <see AUTHORS.txt>",
