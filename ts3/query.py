@@ -906,7 +906,7 @@ class TS3ServerConnection(TS3BaseConnection):
         "whoami"
     ])
 
-    def open(self, host, port, timeout=None, protocol="telnet", tp_args=None):
+    def open(self, host, port, timeout=30, protocol="telnet", tp_args=None):
         super().open(host, port, timeout, protocol, tp_args)
 
         # Try to log in. Only SSH requires authentication during the connection
