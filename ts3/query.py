@@ -182,7 +182,7 @@ class TS3BaseConnection(object):
     # ------------------------------------------------
 
     def open(self, host, port=10011,
-             timeout=socket._GLOBAL_DEFAULT_TIMEOUT):
+             timeout=30):
         """
         Connect to the TS3 Server listening on the address given by the
         *host* and *port* parmeters. If *timeout* is provided, this is the
