@@ -387,7 +387,7 @@ class TS3BaseConnection(object):
     # Networking
     # ------------------------------------------------
 
-    def open(self, host, port, timeout=None, protocol="telnet", tp_args=None):
+    def open(self, host, port, timeout=30, protocol="telnet", tp_args=None):
         """
         Connect to the TS3 query service.
 
