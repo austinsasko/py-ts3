@@ -202,8 +202,8 @@ class TS3BaseConnection(object):
             # Wait for the first and the second greeting:
             # b'TS3\n\r'
             # b'Welcome to the [...] on a specific command.\n\r'
-            self._telnet_conn.read_until(b"\n\r")
-            self._telnet_conn.read_until(b"\n\r")
+            self._telnet_conn.read_until(b"\n\r", timeout=timeout)
+            self._telnet_conn.read_until(b"\n\r", timeout=timeout)
 
             self._num_pending_queries = 0
             self._event_queue = list()
